@@ -1,0 +1,7 @@
+[Desktop Entry]
+Type=Application
+Name=pytunaOS First Login Setup
+Exec=/bin/bash %h/.config/pytuna/first-login-fixup.sh
+X-GNOME-Autostart-enabled=true
+NoDisplay=true
+Hidden=false
