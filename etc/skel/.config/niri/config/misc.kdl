@@ -11,8 +11,8 @@
     }
 
     cursor {
-        xcursor-theme "capitaine-cursors"
-        xcursor-size 24
+        xcursor-theme "Adwaita"
+        xcursor-size 12
     }
 
     debug {

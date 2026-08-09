@@ -1,72 +1,49 @@
 [accessibility]
 ui_scale = 0.95000000670552254
 
-[audio]
-enable_overdrive = true
-
 [bar.default]
+capsule = true
 center = [ "workspaces" ]
-end = [
-    "media",
-    "tray",
-    "volume",
-    "clipboard",
-    "network",
-    "bluetooth",
-    "brightness",
-    "battery",
-    "control-center",
-    "session"
-]
 reserve_space = false
 smart_auto_hide = true
 start = [ "clock" ]
 
-[control_center]
-sidebar = "full"
-sidebar_section = "full"
-
-[desktop_widgets]
-enabled = false
-schema_version = 2
-widget_order = []
-
-    [desktop_widgets.grid]
-    cell_size = 16
-    major_interval = 4
-    visible = true
-
-    [desktop_widgets.widget]
-
 [dock]
-icon_size = 33
+background_opacity = 0.39999999105930328
+enabled = true
+icon_size = 38
+launcher_icon = "deer"
+launcher_position = "start"
+magnification_scale = 1.2500000037252903
 reserve_space = false
 shadow = false
+show_dots = true
+show_instance_count = false
 smart_auto_hide = true
 
 [location]
-address = ""
+auto_locate = true
 
 [lockscreen_widgets]
 enabled = false
 schema_version = 2
-widget_order = [ "lockscreen-login-box" ]
+widget_order = [ "lockscreen-login-box@HDMI-A-2" ]
 
     [lockscreen_widgets.grid]
     cell_size = 16
     major_interval = 4
     visible = true
 
-    [lockscreen_widgets.widget."lockscreen-login-box"]
-    box_height = 229.0
+    [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-2"]
+    box_height = 196.0
     box_width = 810.0
     cx = 720.0
-    cy = 701.5
-    output = ""
+    cy = 718.0
+    output = "HDMI-A-2"
     rotation = 0.0
     type = "login_box"
 
-        [lockscreen_widgets.widget."lockscreen-login-box".settings]
+        [lockscreen_widgets.widget."lockscreen-login-box@HDMI-A-2".settings]
         background_color = "surface_variant"
         background_opacity = 0.88
         background_radius = 12.0
@@ -79,94 +56,88 @@ widget_order = [ "lockscreen-login-box" ]
         show_login_button = true
         show_media = true
         show_session_buttons = true
+        show_unlock_hint = true
         show_weather = true
 
-[nightlight]
-enabled = true
-force = true
-
 [shell]
-app_icon_color = "primary"
-corner_radius_scale = 0.90000001341104507
-font_family = "MesloLGL Nerd Font"
-panel_anchor_bar = "default"
+font_family = "Adwaita Sans"
+lang = "pt-BR"
 polkit_agent = true
-popup_shadows = false
+screen_time_enabled = true
 
     [shell.launcher]
     fetch_exchange_rates = false
+    sort_by_usage = false
 
     [shell.panel]
     clipboard_placement = "attached"
     launcher_placement = "attached"
-    launcher_position = "bottom_center"
     open_near_click_clipboard = true
+    open_near_click_control_center = true
+    open_near_click_launcher = true
     open_near_click_session = true
     open_near_click_wallpaper = true
     polkit_placement = "attached"
-    shadow = false
 
     [shell.screenshot]
-    directory = "/home/USERPLACEHOLDER/Pictures/Screenshots"
-
-    [[shell.session.actions]]
-    action = "shutdown"
-    countdown_seconds = 0.0
-    enabled = true
-    shortcut = "1"
-    variant = "destructive"
-
-    [[shell.session.actions]]
-    action = "reboot"
-    countdown_seconds = 0.0
-    enabled = true
-    shortcut = "2"
-    variant = "default"
-
-    [[shell.session.actions]]
-    action = "logout"
-    countdown_seconds = 0.0
-    enabled = true
-    shortcut = "3"
-    variant = "default"
-
-    [[shell.session.actions]]
-    action = "lock"
-    countdown_seconds = 0.0
-    enabled = false
-    shortcut = "1"
-    variant = "default"
-
-    [[shell.session.actions]]
-    action = "lock_and_suspend"
-    countdown_seconds = 0.0
-    enabled = false
-    shortcut = "3"
-    variant = "default"
+    directory = "~/Imagens/Capturas de Tela"
 
 [theme]
-builtin = "Noctalia"
-community_palette = "Flexoki"
-custom_palette = "pytuna"
-mode = "auto"
-source = "custom"
-wallpaper_scheme = "vibrant"
+source = "wallpaper"
+wallpaper_scheme = "faithful"
 
     [theme.templates]
-    builtin_ids = [ "btop", "gtk3", "gtk4", "kcolorscheme", "niri", "qt" ]
+    builtin_ids = [ "gtk3", "gtk4", "niri", "qt" ]
 
 [wallpaper]
-directory = "/home/USERPLACEHOLDER/Pictures/Wallpapers"
-fill_mode = "stretch"
-
-    [wallpaper.automation]
-    enabled = false
+directory = "~/Imagens/Papéis de Parede"
 
     [wallpaper.default]
-    path = "/home/USERPLACEHOLDER/Pictures/Wallpapers/pytuna-default.jpg"
+    path = "/home/user/Imagens/Papéis de Parede/pytuna-default.jpg"
 
     [wallpaper.last]
-    path = "/home/USERPLACEHOLDER/Pictures/Wallpapers/pytuna-default.jpg"
+    path = "/home/user/Imagens/Papéis de Parede/pytuna-default.jpg"
+
+    [wallpaper.monitors.HDMI-A-2]
+    path = "/home/user/Imagens/Papéis de Parede/pytuna-default.jpg"
+
+    [[wallpaper.favorite]]
+    builtin_palette = "Noctalia"
+    palette_source = "builtin"
+    path = "/home/user/Imagens/Papéis de Parede/pytuna-default.jpg"
+    theme_mode = "dark"
+
+[widget.battery]
+color = "#669844"
+
+[widget.bluetooth]
+color = "#52A5BD"
+
+[widget.clipboard]
+color = "#F09B66"
+
+[widget.clock]
+color = "#FFFFFF"
+
+[widget.control-center]
+color = "#8360AB"
+
+[widget.media]
+art_size = 96
+color = "primary"
+max_length = 328
+title_scroll = "on_hover"
 
 [widget.network]
+color = "#52A5BD"
+
+[widget.notifications]
+color = "hover"
+hide_when_no_unread = true
+
+[widget.session]
+color = "#FF0017"
+
+[widget.volume]
+color = "primary"
 show_label = false
