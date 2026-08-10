@@ -58,7 +58,7 @@ wallpaper_scheme = "faithful"
 directory = "~/Imagens/Papéis de Parede"
 
     [wallpaper.default]
-    path = "~/Imagens/Papéis de Parede/pytuna-default.jpg"
+    path = "/usr/share/wallpapers/pytuna-wallpapers/pytuna-default.jpg"
 
 [widget.battery]
 color = "#669844"
